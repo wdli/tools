@@ -128,8 +128,8 @@ alias cp='cp -i'
 alias mtusb='sudo mount -t cifs //192.168.0.1/USB_Storage /home/wdli/USB -o rw'
 alias mtnas='sudo mount 192.168.0.100:/backup ./NAS/'
 alias mnnet1='sudo mn -x --topo=single,3 --controller=remote --switch=ovsk'
-alias npu240='ssh -X David.Li@npu240.npu.edu'
+alias npu240='ssh -X -o ServerAliveInterval=100 David.Li@npu240.npu.edu'
 alias npu241='ssh -X David.Li@npu241.npu.edu'
-alias npumn='ssh -X -p 3022 mininet@50.250.248.58'
+alias npumn='ssh -X ServerAliveInterval=100 -p 3022 mininet@50.250.248.58'
 
 export PYTHONPATH=/home/wdli/workspace/sdn/pox
